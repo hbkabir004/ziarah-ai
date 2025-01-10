@@ -22,7 +22,7 @@ const hotels: Hotel[] = [
 
 export default function Hotels() {
     return (
-        <div className="grid md:grid-cols-1 grid-cols-1 m-32">
+        <div className="grid md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 grid-cols-1 m-8">
             {
                 hotels.map(hotel => <HotelCard key={hotel.id} hotel={hotel} />)
             }
