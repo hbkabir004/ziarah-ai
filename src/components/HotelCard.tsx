@@ -160,7 +160,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           </div>
 
           <div className="relative flex flex-col items-end gap-2">
-            <div className="h-screen absolute inset-y-0 -left-6 -top-10 border-l-2 border-dashed border-[#626262]"></div>
+            <div className="h-screen absolute inset-y-0 lg:-left-4 md:-left-2 -top-10 border-l-2 border-dashed border-[#626262]"></div>
             <div className="flex gap-2">
               <span className="rounded bg-blue-100 px-3 py-1 text-sm text-blue-600">Best</span>
               <span className="rounded bg-orange-100 px-3 py-1 text-sm text-orange-600">Cheapest</span>
