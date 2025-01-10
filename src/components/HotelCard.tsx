@@ -38,15 +38,15 @@ export default function HotelCard({ hotel }: HotelCardProps) {
             </div>
 
             <div className="flex flex-col space-y-2">
-              <div className="flex items-center gap-2 text-gray-600">
+              <div className="flex items-center gap-2 text-gray-600 text-lg">
                 <span>{hotel.address}</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-600">
+              <div className="flex items-center gap-2 text-gray-600 text-sm">
                 <span>{hotel.distance}</span>
               </div>
               <Link
                 href="#"
-                className="flex items-center gap-2 text-blue-600 font-semibold"
+                className="flex items-center gap-2 text-blue-600 font-semibold text-sm"
               >
                 View property in map
                 <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
