@@ -76,7 +76,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
 
           <div className="inline-flex items-start gap-2 bg-[#f4f4f4] p-2 rounded-lg">
             <div className="flex items-center gap-1">
-              <ThumbsupIcon/>
+              <ThumbsupIcon />
               <span className="font-semibold">{hotel.rating}</span>
             </div>
             <span className="text-gray-600">({hotel.reviews} Reviews)</span>
@@ -84,6 +84,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
 
           <div className="flex items-center justify-between border-dashed border-t-2 border-black pt-4">
             <div className="flex items-baseline gap-1">
+
               <span className="text-2xl font-bold text-blue-600">₹{hotel.currentPrice.toFixed(2)}</span>
               <span className="text-gray-600 font-semibold">/ {hotel.nights} nights</span>
             </div>
@@ -103,8 +104,8 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           </button>
         </div>
 
-        <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:justify-between">
-          <div className="space-y-5">
+        <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:justify-evenly">
+          <div className="space-y-5 pr-5">
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <h2 className="text-xl font-bold">{hotel.name}</h2>
@@ -118,18 +119,18 @@ export default function HotelCard({ hotel }: HotelCardProps) {
               <div className="flex items-center gap-4">
                 <Link
                   href="#"
-                  className="flex items-center gap-1 text-blue-600 font-semibold"
+                  className="flex text-sm items-center text-blue-600 font-semibold"
                 >
                   View property in map
                   <ExternalLink className="ml-1 mt-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
-                <span className="flex items-center gap-1 text-gray-600">
+                <span className="flex text-sm font-semibold items-center gap-1 text-gray-600">
                   {hotel.distance}
                 </span>
               </div>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-2">
               <div className="flex items-center gap-1">
                 <WifiIcon />
                 <span>Free Wifi</span>
@@ -152,7 +153,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
 
             <div className="inline-flex items-center gap-2 bg-[#f4f4f4] p-2 rounded-lg">
               <div className=" flex items-center gap-1">
-                <ThumbsupIcon/>
+                <ThumbsupIcon />
                 <span className="font-semibold">{hotel.rating}</span>
               </div>
               <span className="text-gray-600">({hotel.reviews} Reviews)</span>
@@ -167,6 +168,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
             </div>
             <div className="text-right space-y-4">
               <div className="flex items-center justify-end gap-2">
+                <span className="text-sm text-gray-500 line-through">₹{hotel.originalPrice.toFixed(2)}</span>
                 <span className="text-2xl font-bold text-blue-600">₹{hotel.currentPrice.toFixed(2)}</span>
               </div>
               <p className="text-sm text-gray-600">Includes Taxes & Charges</p>
